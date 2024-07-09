@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme"
+
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
@@ -10,6 +12,9 @@ export default {
         lg:'1440px',
         xlg:'2560px'
       },
+      fontFamily:{
+        poppins:["Poppins", ...defaultTheme.fontFamily.sans]
+      }
   },
   },
   plugins: [],
