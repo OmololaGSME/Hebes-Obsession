@@ -1,10 +1,11 @@
-import { Header } from "../Components"
+import { Footer, Header } from "../Components"
 
 
 const Service = () => {
   return (
     <div>
         <Header/>
+        <Footer/>
     </div>
   )
 }

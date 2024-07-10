@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import { Home, Service } from './Pages'
+import { Admin, User } from "./Pages"
+
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
   return (
     <Router>
     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/Service' element={<Service/>}/>
+      <Route path="*" element={<User/>}/>
+      <Route path="/admin" element={<Admin/>}/>
     </Routes>
     </Router>
   )
