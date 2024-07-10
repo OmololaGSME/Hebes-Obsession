@@ -19,3 +19,7 @@ export default Admin
 
 // this is for the admin page
 // put all your routes for the admin high fidelity section
+{/* <p>Put your routing here </p> 
+  create the login and signup page and set the login page as the default and route it to the home page
+  the login page should be <Route path="/" element={<Login/>}/>. this is for mustapaha babtunde
+  */}
