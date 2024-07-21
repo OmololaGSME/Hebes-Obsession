@@ -1,27 +1,23 @@
+import { useState, useEffect } from "react";
 import { Footer, Header } from "../Components";
 import HomeImageModal from "../Components/ImageDisplay/HomeImageModal";
 
 
 const Home = () => {
 
+  
 
   return (
     <div>
-      <Header 
-        isAdmin={true}
-      />
+        <Header/>
 
-      <div>
-
+        <div>
       <HomeImageModal/>
-      
-      </div>
+        </div>
 
-     
-
-      <Footer />
+        <Footer/>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

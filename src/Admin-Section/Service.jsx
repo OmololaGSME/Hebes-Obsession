@@ -4,7 +4,9 @@ import { Footer, Header } from "../Components"
 const Service = () => {
   return (
     <div>
-        <Header/>
+        <Header
+          isAdmin={true}
+        />
         <Footer/>
     </div>
   )

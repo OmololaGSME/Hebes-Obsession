@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
-import { Home, Service } from '../Admin-Section'
+import { Home, ImageDirectory, Service } from '../Admin-Section'
+
 
 const Admin = () => {
   return (
@@ -8,6 +9,7 @@ const Admin = () => {
             <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Service' element={<Service/>}/>
+            <Route path="/image_directory" element={<ImageDirectory/>}/>
             </Routes>
         
     </div>
