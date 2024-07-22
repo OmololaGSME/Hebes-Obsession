@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Footer, Header } from "../Components";
 import HomeImageModal from "../Components/ImageDisplay/HomeImageModal";
 

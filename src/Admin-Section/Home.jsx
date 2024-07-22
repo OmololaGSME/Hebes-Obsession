@@ -13,7 +13,9 @@ const Home = () => {
 
       <div>
 
-      <HomeImageModal/>
+      <HomeImageModal
+        isAdmin={true}
+      />
       
       </div>
 

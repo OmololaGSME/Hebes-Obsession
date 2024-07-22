@@ -76,9 +76,9 @@ const  ImageContext = ({images,isAdmin,onEdit}) => {
 
     <h2>Product and Services</h2>
 
-    <div className='flex flex-wrap items-end justify-between space-y-11'>
+    <div className='flex flex-wrap '>
         {restImages.map((image,index)=>(
-            <div key={index}className='space-y-8 border-[0.5px] border-[#E8CD80] rounded-b-lg'>
+            <div key={index} className='space-y-8 border-[0.5px] border-[#E8CD80] rounded-b-lg'>
                 <img
                     src={image.src}
                     alt={`Image ${index}`}

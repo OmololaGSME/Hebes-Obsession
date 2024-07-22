@@ -9,7 +9,7 @@ const admin_navItems = [
 ];
 
 const user_navItems = [
-  {link:'', name:'Services'},
+  {link:'/service', name:'Services'},
   {link:'', name:'Product'},
   { link: "", name: "Contact Us" },
  
