@@ -1,4 +1,4 @@
-import { Footer, Header } from "../Components";
+import { Carousel, Footer, Header } from "../Components";
 import HomeImageModal from "../Components/ImageDisplay/HomeImageModal";
 
 
@@ -13,6 +13,7 @@ const Home = () => {
         <div>
       <HomeImageModal/>
         </div>
+        <Carousel/>
 
         <Footer/>
     </div>

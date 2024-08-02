@@ -1,4 +1,5 @@
 import { useState } from "react"
+import {useNavigate} from 'react-router-dom'
 import { Footer, Header } from "../Components"
 
 const defaultImages = [
@@ -11,9 +12,16 @@ const defaultImages = [
 ]
 
 
-const ImageDirectory = () => {
+const ImageDirectory = ({onSelectImage}) => {
 
+    const navigate = useNavigate()
     const [images,setImages] = useState(defaultImages)
+
+    const handleSelectedImage = (imagePath)=>{
+        onSelectImage(imagePath)
+       navigate(-1)
+    }
+
 
     const handleUpload = () =>{
         document.getElementById('fileInput').click()
@@ -69,7 +77,11 @@ const ImageDirectory = () => {
         <div className="grid grid-cols-3 gap-3 px-20 space-x-3">
 
         {images.map((image,index)=>(
-            <div key={index}>
+            <div 
+            key={index}
+            className="cursor-pointer"
+            onClick={()=>handleSelectedImage(image)}
+            >
                 <img 
                 src={image}
                 alt={`image${index}`}
