@@ -1,18 +1,23 @@
 import { Carousel, Footer, Header } from "../Components";
 import HomeImageModal from "../Components/ImageDisplay/HomeImageModal";
 
+
 const Home = () => {
+
+  
+
   return (
     <div>
-      <Header isAdmin={true} />
+        <Header/>
 
-      <HomeImageModal isAdmin={true} />
+        <div>
+      <HomeImageModal/>
+        </div>
+        <Carousel/>
 
-      <Carousel />
-
-      <Footer />
+        <Footer/>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

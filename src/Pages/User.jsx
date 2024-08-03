@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom"
-import {Home} from '../High-Fidelity-Section'
+import {Home, Service} from '../Client-Section'
 
 const User = () => {
   return (
     <Routes>
     <Route path ='/' element={<Home/>}/>
-
+    <Route path="/service" element={<Service/>}/>
     </Routes>
   )
 }
