@@ -8,8 +8,8 @@ const Admin = () => {
         
             <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/Service' element={<Service/>}/>
             <Route path="/image_directory" element={<ImageDirectory/>}/>
+            <Route path='/Service' element={<Service/>}/>
             </Routes>
         
     </div>

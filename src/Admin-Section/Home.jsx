@@ -1,25 +1,14 @@
-import { Footer, Header } from "../Components";
+import { Carousel, Footer, Header } from "../Components";
 import HomeImageModal from "../Components/ImageDisplay/HomeImageModal";
 
-
 const Home = () => {
-
-
   return (
     <div>
-      <Header 
-        isAdmin={true}
-      />
+      <Header isAdmin={true} />
 
-      <div>
+      <HomeImageModal isAdmin={true} />
 
-      <HomeImageModal
-        isAdmin={true}
-      />
-      
-      </div>
-
-     
+      <Carousel />
 
       <Footer />
     </div>
